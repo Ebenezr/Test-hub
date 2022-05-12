@@ -49,7 +49,7 @@ The major challenge I faces was makes the web pages responsive.
 
 #### method one
 clone the repo using the command
-- $git clone 
+- $git clone https://github.com/Ebenezr/Test-hub.git
 change directory using command
 - $cd landing-page
 #### live link
