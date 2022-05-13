@@ -17,6 +17,8 @@ Test Hub is web application that enables students to take multiple answered ques
 ## Designs
 ### Desktop landing page design
 ![image](/assets/images/landingPageDesktop.png)
+### Desktop landing page design
+![image](/assets/images/TESTPAGEpc.png)
 ### mobile test page design
 ![image](/assets/images/testPageMobile.png)
 ## Table of content
