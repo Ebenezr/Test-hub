@@ -13,32 +13,77 @@ article ul{
     display: flex;
     flex-direction: column;
 }
-article ul li{
-    background-color: #ffffff;
-    padding:1em 1em;
-    border-radius: 0.7em;
-    
-}
 .quiz-wrapper button{
     padding:1em 6em;
     border: none;
-
     border-radius: 0.7em;
+    
 
 }
-.quiz-wrapper-header{
-    
+.quiz-wrapper button:hover{
+    background-color:#074F62;
+    color: #fff;
+}
+.input-container{
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    font-size: 1.3em;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
 }
 /*hide default radio buttons*/
-input[type="radio"]{
-    -webkit-appearance: none;
-    appearance: none;
-    position: relative;
-    display: block;
+.input-container input{
+    /* -webkit-appearance: none;
+    appearance: none; */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
     
 }
-li:hover{
-    background-color:#000;
-    color:#fff;
+/* custom radio button styling */
+.check{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: rgb(197, 197, 197);
+  border-radius: 50%;
+
 }
+/*hover effect*/
+.input-container:hover input ~ .check{
+    background-color:#84b1be;
+}
+/*select effect*/
+.input-container input:checked ~ .check{
+    background-color:#074F62;
+}
+/*not checked indicator*/
+.check:after{
+    content:"";
+    position:absolute;
+    display:none;
+}
+/*checked indicator*/
+.input-container input:checked ~ .check:after{
+    display:block;
+}
+/*inside checked circle style*/
+.input-container .check:after {
+   top: 0.3em;
+   left: 0.3em;
+   width: 0.7em;
+   height: 0.7em;
+   border-radius: 50%;
+   background: rgb(255, 255, 255);
+}
+
+
 
