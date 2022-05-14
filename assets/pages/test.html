@@ -21,15 +21,13 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
             integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="crossorigin="anonymous"
             referrerpolicy="no-referrer" />
-
+        <!--page css-->
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/testFooter.css">
         <link rel="stylesheet" href="../css/test.css">
     </head>
-
     <body>
         <main>
-
             <!-- header section -->
             <header>
                 <nav>
@@ -44,32 +42,42 @@
             <article class="quiz-wrapper" id="quiz-wrapper">
                 <div class="quiz-wrapper-header">
                     <h3 id="question">Test quiz</h3>
+                    <!-- answers option section -->
                     <ul>
                         <li>
-                            <input type="radio" name="option" id="A" class="options">
-                            <label for="A" id="optionA">Option</label>
+                            <label for="A" id="optionA">Option
+                                <input type="radio" name="option" id="A"
+                                    class="options">
+                                <span class="check"></span>
+                            </label>
                         </li>
                         <li>
-                            <input type="radio" name="option" id="B" class="options">
-                            <label for="A" id="optionB">Option</label>
+                            <label for="A" id="optionB">Option
+                                <input type="radio" name="option" id="B"
+                                    class="options">
+                                <span class="check"></span>
+                            </label>
                         </li>
                         <li>
-                            <input type="radio" name="option" id="C" class="options">
-                            <label for="A" id="optionC">Option</label>
+                            <label for="A" id="optionC">Option
+                                <input type="radio" name="option" id="C"
+                                    class="options">
+                                <span class="check"></span>
+                            </label>
                         </li>
                         <li>
-                            <input type="radio" name="option" id="D" class="options">
-                            <label for="A" id="optionD">Option</label>
+                            <label for="A" id="optionD">Option
+                                <input type="radio" name="option" id="D"
+                                    class="options">
+                                <span class="check"></span>
+                            </label>
                         </li>
 
                     </ul>
                 </div>
                 <button id="submit">Next</button>
-
-
-
             </article>
-           
+
             <!-- footer -->
             <footer>
                 <div class="brand">
@@ -94,5 +102,4 @@
         </main>
         <script src="../js/main.js"></script>
     </body>
-
 </html>
