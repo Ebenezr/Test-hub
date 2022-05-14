@@ -81,9 +81,11 @@ function loadQuiz() {
 function deselectAnswers() {
   answerEls.forEach(answerEl => answerEl.checked = false)
 }
-
+//function to check which option has been selected
 function getSelected() {
+  //initialize variable to store selected option
   let answer
+  //forEach loop to loop through all radio buttons and get the selected value
   answerEls.forEach(answerEl => {
       if(answerEl.checked) {
           answer = answerEl.id
@@ -107,12 +109,39 @@ submitBtn.addEventListener('click', () => {
      } else {
        //computes score percentage
          quiz.innerHTML = `
-         <h2>You Scored ${score*20} %</h2>
-
+         <h2>You Scored <em>${calGrade(score)}</em> of ${score*20} % </h2>
+          
          <button onclick="location.reload()">Reload</button>
          `
      }
   }
 })
+
+//function to compute score grade
+function calGrade(score){
+  var tempVal=score*20;
+  var grade;
+      
+  if (tempVal <= 100 && tempVal >= 80){
+        grade ='A'
+  }
+  
+  else if(tempVal <= 89 && tempVal >= 70){
+        grade ='B'
+  }
+  
+  else if(tempVal <= 69 && tempVal >= 50){
+        grade ='C'
+  }
+  
+  else if(tempVal <= 49 && tempVal >= 40){
+        grade ='D'
+  }
+  
+  else if(tempVal < 39 ){
+        grade ='F'
+  }
+  return grade;
+}
 
 
