@@ -10,21 +10,30 @@ Test Hub is web application that enables students to take multiple answered ques
 ## Screenshots
 
 ### landing page
+#### Mobile
 ![image](/assets/images/landingPageM.png)
+#### Desktop
 ![image](/assets/images/landingPage.png)
-
+***
 ### test page
+#### Mobile
 ![image](/assets/images/testPageM.png)
+#### Desktop
 ![image](/assets/images/testPageD.png)
-
+***
 ### results page
-![image](/assets/images/resultspage.png)
+#### Mobile
 ![image](./assets/images/resultsPageM.png)
+#### Desktop
+![image](/assets/images/resultspage.png)
+***
 ## Figma Designs
 - landing page
   https://www.figma.com/file/bLyP3eHm0qrAxW8Rs3hzBg/landingpagePC?node-id=2%3A2
 - test page
   https://www.figma.com/file/q7fcFtHIOATLWMITqM46n7/testpagePC?node-id=0%3A1  
+
+***
 ## Table of content
 - [Technologies]
 - [Description]
@@ -33,14 +42,14 @@ Test Hub is web application that enables students to take multiple answered ques
 - [Project-usage]
 - [Copyright]
 - [Licence]
-
+***
 ## Technologies
 
 languages used are: 
 - HTML :HTML5 -which is used to create the structure of thr page
 - CSS :CSS4 -used to style the page
 - JavaScript -used to code app logic
-
+***
 ### Features
 * As a user you ase able to:
   - navigate through the site
@@ -48,7 +57,7 @@ languages used are:
   - app will mark and grade the students
   - the app will time the student 
   - the app will display students results after submission or when time is over
-
+***
 ### description
 I used java script to create a dynamic site and also to create some complex function such as timing and marking and grading of the test.
 I used html in creating the page structure and css in styling the document.
@@ -64,6 +73,7 @@ clone the repo using the command
 - $git clone https://github.com/Ebenezr/Test-hub.git
 change directory using command
 - $cd landing-page
+***
 #### live link
    - click the following link to view the application
  https://ebenezr.github.io/Test-hub/
