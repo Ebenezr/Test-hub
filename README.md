@@ -1,6 +1,6 @@
 # Test Hub 
 
-Test Hub is web application that enables students to take multiple answered questions then mark and present the score to the students.The test is timed and will end either when time is over or the student submits before time. The project uses Javascript for the logic, HTML for page structure and vanilla css for site styling.
+Test Hub is web application that enables students to take multiple answered questions then mark and present the score to the students.The test is timed and will end either when time is over or the student submits before time. The project uses Javascript for the logic, HTML for page structure and Vanilla css for site styling.
 ***
 ## Author 
 
