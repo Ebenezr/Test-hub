@@ -66,6 +66,7 @@ css link https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awes
 *** 
 ### challenges 
 The major challenge I faces was implementing timer per question function. 
+***
 ## How to set up and run the project
 
 #### method one
