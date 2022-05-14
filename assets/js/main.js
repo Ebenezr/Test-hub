@@ -1,47 +1,62 @@
-const quizData = [
+// Questions and answers data bank
+
+const questionsObject = [
   {
-      question: "Which language runs in a web browser?",
-      a: "Java",
-      b: "R",
-      c: "Python",
-      d: "javascript",
-      correct: "d",
-  },
-  {
-      question: "What does CSS stand for?",
-      a: "Central Style Sheets",
-      b: "Cascading Style Sheets",
-      c: "Cascading Simple Sheets",
-      d: "Cars SUVs Sailboats",
-      correct: "b",
-  },
-  {
-      question: "What does HTML stand for?",
-      a: "Hypertext Markup Language",
-      b: "Hypertext Markdown Language",
-      c: "Hyperloop Machine Language",
-      d: "Helicopters Terminals Motorboats Lamborginis",
+      question: "How do you print something in javascript?",
+      a: "console.log('print)",
+      b: "print('print')",
+      c: "printf('print')",
+      d: "log('print')",
       correct: "a",
   },
   {
-      question: "What year was JavaScript launched?",
-      a: "1996",
-      b: "1995",
-      c: "1994",
-      d: "none of the above",
+      question: "What is the other name of javascript?",
+      a: "ECMAscript",
+      b: "JS",
+      c: "none of the above",
+      d: "all of the above",
       correct: "b",
   },
+  {
+      question: "Is java an oop language?",
+      a: "no",
+      b: "not entirely true",
+      c: "yes",
+      d: "none of the above",
+      correct: "c",
+  },
+  {
+      question: "Where can you add external javascript?",
+      a: "inside head tag",
+      b: "inside body tag",
+      c: "all of the above",
+      d: "none of the above",
+      correct: "c",
+  },
+  {
+      question: "How do you call a javascript method?",
+      a: "method()",
+      b: "call method()",
+      c: "run method()",
+      d: "none of the above",
+      correct: "a",
+},
 
 
 ];
 
+
 const quiz= document.getElementById('quiz-wrapper')
+//get radio buttons values from html
 const answerEls = document.querySelectorAll('.options')
+//gets and prints the questions in html 
 const questionEl = document.getElementById('question')
+//prints answer options to the html radio labels || four options are used 
 const optionA = document.getElementById('optionA')
 const optionB = document.getElementById('optionB')
 const optionC = document.getElementById('optionC')
 const optionD = document.getElementById('optionD')
+//link the submit values from html
 const submitBtn = document.getElementById('submit')
 
 
@@ -54,13 +69,13 @@ function loadQuiz() {
 
   deselectAnswers()
 
-  const currentQuizData = quizData[currentQuiz]
+  const currentquestionsObject = questionsObject[currentQuiz]
 
-  questionEl.innerText = currentQuizData.question
-  optionA.innerText = currentQuizData.a
-  optionB.innerText = currentQuizData.b
-  optionC.innerText = currentQuizData.c
-  optionD.innerText = currentQuizData.d
+  questionEl.innerText = currentquestionsObject.question
+  optionA.innerText = currentquestionsObject.a
+  optionB.innerText = currentquestionsObject.b
+  optionC.innerText = currentquestionsObject.c
+  optionD.innerText = currentquestionsObject.d
 }
 
 function deselectAnswers() {
@@ -81,20 +96,23 @@ function getSelected() {
 submitBtn.addEventListener('click', () => {
   const answer = getSelected()
   if(answer) {
-     if(answer === quizData[currentQuiz].correct) {
+     if(answer === questionsObject[currentQuiz].correct) {
          score++
      }
 
      currentQuiz++
 
-     if(currentQuiz < quizData.length) {
+     if(currentQuiz < questionsObject.length) {
          loadQuiz()
      } else {
+       //computes score percentage
          quiz.innerHTML = `
-         <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+         <h2>You Scored ${score*20} %</h2>
 
          <button onclick="location.reload()">Reload</button>
          `
      }
   }
 })
+
+

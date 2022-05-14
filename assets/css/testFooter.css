@@ -64,3 +64,48 @@ hr{
     color:#FFAC12;
     transform: scale(1,2);
 }
+
+/*media query*/
+@media screen and (max-width: 768px) {
+    main{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+    footer{
+        height: 31vh;
+        width:100%;
+        margin:0;
+        padding: 0;
+    }
+    footer strong{
+        font-size: 2em;
+        
+      
+    }
+    footer i{
+        font-size: 2.5em;
+        margin-right: 0.3em;
+    }
+    .brand h4{
+        font-size:0.8em;
+        font-weight: 300;
+        margin:0;
+        
+    }
+
+    .copyright a{
+        font-weight: 100;
+    
+    }
+
+    .footerNav ul{
+        gap:2em;
+        margin: 1em 0;
+       
+    }
+    hr{
+        margin: 0 auto;
+    }
+
+}

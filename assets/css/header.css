@@ -61,3 +61,38 @@ nav i{
     font-weight: 900;
     
 }
+/*header media query*/
+@media screen and (max-width: 768px) {
+
+    header{
+        justify-content:space-between;
+        padding:0.3em;
+        margin:0;
+        width:100%;
+    }
+    nav{
+        width: 100%;
+        margin:0;
+        padding-right:0.5em;
+    }
+    ul{
+        gap:0.5em;
+        padding: 0;
+        margin:0;
+    }
+    nav ul strong{
+        font-size:1.5em;
+    }
+    nav i{
+        font-size:1.5em;
+        margin-right: 0.2em;
+        font-weight: 900;
+        
+    }
+    .active{
+        
+        padding:0.3em 1em;
+ 
+    }
+
+}

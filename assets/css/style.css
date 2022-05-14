@@ -60,6 +60,8 @@ article img{
         flex-direction: column;
         justify-content: center;
         margin: 1em 0;
+        height: 70vh;
+        
 
     }
     article img{
@@ -72,6 +74,7 @@ article img{
         padding: 0.2em;
         height:auto;
         padding: 1em 0;
+       
     }
     .textInfo h1{
         font-size:2em;
@@ -86,7 +89,7 @@ article img{
         margin:0.3em 0;
     }
     .textInfo button{
-        margin: 0 0.5em;
+        margin: 0.7em 0.5em;
     }
     
 }
