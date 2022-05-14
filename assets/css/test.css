@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 article{
-    width: 100vw;
+    width: 70vw;
     display: block;
     height: 50vh;
     padding: 2em;
-    margin:0;
+    margin:0 auto;
 
 }
 article ul{
@@ -14,10 +14,18 @@ article ul{
     flex-direction: column;
     padding:0;
 }
+.quiz-wrapper{
+    display: flex;
+    flex-direction: column;
+}
 .quiz-wrapper button{
-    padding:1em 6em;
+    padding:2em 15em;
     border: none;
     border-radius: 0.7em;
+    justify-self: center;
+    font-weight: 600;
+    font-size:1.2em;
+    letter-spacing: 0.1em;
 }
 .quiz-wrapper button:hover{
     background-color:#074F62;
@@ -33,7 +41,7 @@ input[type="radio"] + label {
     cursor: pointer;
     display: block;
     height: 3em;
-    width: 30%;
+    width: 100%;
     margin: 1em 0;
     border-radius:0.5em;
     align-items: center;
@@ -42,13 +50,16 @@ input[type="radio"] + label {
     }
  input[type="radio"]:checked + label {
     border: none;
-    background-color: dodgerblue;
+    background-color: #FFAC12;
   }
   input[type="radio"]:hover + label {
     border: none;
     background-color: rgb(45, 46, 47);
     color: #fff;
   } 
+  .copyr{
+      font-size:0.9em !important;
+  }
 
   /*media query*/
 @media screen and (max-width: 768px) {
@@ -74,5 +85,8 @@ input[type="radio"] + label {
         }
     nav{
         padding-right: 1em;
+    }
+    .copyr{
+        font-size:0.9em !important;
     }    
 }

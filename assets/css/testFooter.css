@@ -20,11 +20,13 @@ footer strong{
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 2.5em;
-    color:#fff;
+    color:#FFAC12;
 }
 footer i{
     font-size: 2.5em;
     margin-right: 0.2em;
+    color:#FFAC12;
+
 }
 .brand h4{
     font-size:1em;

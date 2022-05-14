@@ -41,6 +41,10 @@ nav ul strong{
     align-items: center;
     text-align: center;
 }
+li a:hover{
+    background-color: #074F62;
+    color: #fff;
+}
 #changeColor{
     color: #FFAC12;
     
