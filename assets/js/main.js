@@ -86,11 +86,16 @@ var sec = 60;
 var time = setInterval(myTimer, 1000);
 
 function myTimer() {
-    document.getElementById('timer').innerHTML = sec + "sec left";
+    document.getElementById('timer').innerHTML = sec + " sec";
     sec--;
     if (sec == -1) {
         clearInterval(time);
         alert("Time out!! :(");
+        quiz.innerHTML = `
+         <h2>You Scored <em>${calGrade(score)}</em> of ${score*20} % </h2>
+          
+         <button onclick="location.reload()">Reload</button>
+         `
     }
 }
 

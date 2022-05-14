@@ -1,6 +1,6 @@
 # Test Hub 
 
-Test Hub is web application that enables students to take multiple answered questions then mark and present the score to the students. The project uses Javascript for the logic, HTML for page structure and vanilla css for site styling.
+Test Hub is web application that enables students to take multiple answered questions then mark and present the score to the students.The test is timed and will end either when time is over or the student submits before time. The project uses Javascript for the logic, HTML for page structure and vanilla css for site styling.
 ***
 ## Author 
 
@@ -10,17 +10,21 @@ Test Hub is web application that enables students to take multiple answered ques
 ## Screenshots
 
 ### landing page
+![image](/assets/images/landingPageM.png)
+![image](/assets/images/landingPage.png)
 
 ### test page
+![image](/assets/images/testPageM.png)
+![image](/assets/images/testPageD.png)
 
-
+### results page
+![image](/assets/images/resultspage.png)
+![image](./assets/images/resultsPageM.png)
 ## Figma Designs
-### Desktop landing page design
-![image](/assets/images/landingPageDesktop.png)
-### Desktop landing page design
-![image](/assets/images/testpageDeskTop.png)
-### mobile test page design
-![image](/assets/images/testPageMobile.png)
+- landing page
+  https://www.figma.com/file/bLyP3eHm0qrAxW8Rs3hzBg/landingpagePC?node-id=2%3A2
+- test page
+  https://www.figma.com/file/q7fcFtHIOATLWMITqM46n7/testpagePC?node-id=0%3A1  
 ## Table of content
 - [Technologies]
 - [Description]
@@ -39,14 +43,20 @@ languages used are:
 
 ### Features
 * As a user you ase able to:
+  - navigate through the site
+  - user can take a test
+  - app will mark and grade the students
+  - the app will time the student 
+  - the app will display students results after submission or when time is over
 
 ### description
+I used java script to create a dynamic site and also to create some complex function such as timing and marking and grading of the test.
 I used html in creating the page structure and css in styling the document.
 I also used an external css to enable me to use fa icons
 css link https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
 *** 
 ### challenges 
-The major challenge I faces was makes the web pages responsive. 
+The major challenge I faces was implementing timer per question function. 
 ## How to set up and run the project
 
 #### method one

@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Lato:wght@300&family=Oswald:wght@200;300&display=swap');
+
 *{
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
 }
 article{
     width: 70vw;
@@ -64,15 +68,17 @@ input[type="radio"] + label {
   /*media query*/
 @media screen and (max-width: 768px) {
     article{
-        width: 100vw;
+        width: 97vw;
         height: 55vh;
-        padding: 2em;
         margin:0;
         align-items: center;
     
     }
+
     .quiz-wrapper button{
         width:100%;
+        padding: 1em 3em;
+        margin: 0;
     }
     input[type="radio"] + label {
         height: 3em;
