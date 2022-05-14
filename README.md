@@ -14,7 +14,7 @@ Test Hub is web application that enables students to take multiple answered ques
 ### test page
 
 
-## Designs
+## Figma Designs
 ### Desktop landing page design
 ![image](/assets/images/landingPageDesktop.png)
 ### Desktop landing page design
