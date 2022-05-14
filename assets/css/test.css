@@ -9,11 +9,11 @@ article{
     margin-bottom:1em;
 
 }
-ul{
+article ul{
     display: flex;
     flex-direction: column;
 }
-ul li{
+article ul li{
     background-color: #ffffff;
     padding:1em 1em;
     border-radius: 0.7em;
