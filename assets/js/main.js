@@ -58,13 +58,16 @@ const optionC = document.getElementById('optionC')
 const optionD = document.getElementById('optionD')
 //link the submit values from html
 const submitBtn = document.getElementById('submit')
-
+var currentQuestionNumber = 0;
+var timeLeft = 30;
+var timerInterval = 0
 
 let currentQuiz = 0
 let score = 0
 
 loadQuiz()
 
+//dispalys first question
 function loadQuiz() {
 
   deselectAnswers()
@@ -77,6 +80,22 @@ function loadQuiz() {
   optionC.innerText = currentquestionsObject.c
   optionD.innerText = currentquestionsObject.d
 }
+
+// timer function timer set to 60 seconds initial
+var sec = 60;
+var time = setInterval(myTimer, 1000);
+
+function myTimer() {
+    document.getElementById('timer').innerHTML = sec + "sec left";
+    sec--;
+    if (sec == -1) {
+        clearInterval(time);
+        alert("Time out!! :(");
+    }
+}
+
+
+
 
 function deselectAnswers() {
   answerEls.forEach(answerEl => answerEl.checked = false)
@@ -94,7 +113,7 @@ function getSelected() {
   return answer
 }
 
-
+//function to listen to button events and store scores locally
 submitBtn.addEventListener('click', () => {
   const answer = getSelected()
   if(answer) {
@@ -107,7 +126,7 @@ submitBtn.addEventListener('click', () => {
      if(currentQuiz < questionsObject.length) {
          loadQuiz()
      } else {
-       //computes score percentage
+       //computes score percentage inside I call function to compute grades with score as its argument
          quiz.innerHTML = `
          <h2>You Scored <em>${calGrade(score)}</em> of ${score*20} % </h2>
           
@@ -119,6 +138,7 @@ submitBtn.addEventListener('click', () => {
 
 //function to compute score grade
 function calGrade(score){
+  //i multiplied by 20 to make it out of 100 (%) 
   var tempVal=score*20;
   var grade;
       
@@ -143,5 +163,17 @@ function calGrade(score){
   }
   return grade;
 }
+
+//alert box
+function myAlert() {
+  alert("Oops Site still under construction :(");
+}
+//prompt box
+function myConfirm() {  
+  if(confirm ("You will be redirected to the test page and timer started"))
+  {
+    window.location.href="./assets/pages/test.html";
+  }
+  }  
 
 
