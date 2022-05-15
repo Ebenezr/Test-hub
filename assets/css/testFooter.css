@@ -1,8 +1,10 @@
+/*Test page footer styling*/
 main{
     position: relative;
     height: 100vh;
     width: 100vw;
 }
+/*footer wrapper*/
 footer{
     position: absolute;
     bottom: 0;
@@ -17,18 +19,21 @@ footer{
     text-align: center;
     
 }
+/*logo*/
 footer strong{
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 2.5em;
     color:#FFAC12;
 }
+/*copyright icon*/
 footer i{
     font-size: 2.5em;
     margin-right: 0.2em;
     color:#FFAC12;
 
 }
+/* logo name */
 .brand h4{
     font-size:1em;
     margin:0;
@@ -39,6 +44,7 @@ hr{
     color:#fff;
     
 }
+/*copyright link*/
 .copyright a{
     text-decoration:none;
     color:#fff;
