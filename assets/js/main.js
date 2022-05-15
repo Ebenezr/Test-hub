@@ -48,33 +48,32 @@ const questionsObject = [
 
 const quiz= document.getElementById('quiz-wrapper')
 //get radio buttons values from html
-const answerEls = document.querySelectorAll('.options')
+const radioOptions = document.querySelectorAll('.options')
 //gets and prints the questions in html 
-const questionEl = document.getElementById('question')
+const questionWrite = document.getElementById('question')
 //prints answer options to the html radio labels || four options are used 
+//gets radio buttons values from html
 const optionA = document.getElementById('optionA')
 const optionB = document.getElementById('optionB')
 const optionC = document.getElementById('optionC')
 const optionD = document.getElementById('optionD')
 //link the submit values from html
 const submitBtn = document.getElementById('submit')
-var currentQuestionNumber = 0;
-var timeLeft = 30;
-var timerInterval = 0
+
 
 let currentQuiz = 0
 let score = 0
 
 loadQuiz()
 
-//dispalys first question
+//displays first question
 function loadQuiz() {
 
   deselectAnswers()
 
   const currentquestionsObject = questionsObject[currentQuiz]
 
-  questionEl.innerText = currentquestionsObject.question
+  questionWrite.innerText = currentquestionsObject.question
   optionA.innerText = currentquestionsObject.a
   optionB.innerText = currentquestionsObject.b
   optionC.innerText = currentquestionsObject.c
@@ -91,6 +90,7 @@ function myTimer() {
     if (sec == -1) {
         clearInterval(time);
         alert("Time out!! :(");
+        //if time is up finish test an print results
         quiz.innerHTML = `
          <h2>You Scored <em>${calGrade(score)}</em> of ${score*20} % </h2>
           
@@ -101,16 +101,16 @@ function myTimer() {
 
 
 
-
+//function to reset local db
 function deselectAnswers() {
-  answerEls.forEach(answerEl => answerEl.checked = false)
+  radioOptions.forEach(answerEl => answerEl.checked = false)
 }
 //function to check which option has been selected
 function getSelected() {
   //initialize variable to store selected option
   let answer
   //forEach loop to loop through all radio buttons and get the selected value
-  answerEls.forEach(answerEl => {
+  radioOptions.forEach(answerEl => {
       if(answerEl.checked) {
           answer = answerEl.id
       }
@@ -127,12 +127,13 @@ submitBtn.addEventListener('click', () => {
      }
 
      currentQuiz++
-
+//if test is done execute...
      if(currentQuiz < questionsObject.length) {
          loadQuiz()
      } else {
        //computes score percentage inside I call function to compute grades with score as its argument
-         quiz.innerHTML = `
+       // prints results grade and score in percentage
+       quiz.innerHTML = `
          <h2>You Scored <em>${calGrade(score)}</em> of ${score*20} % </h2>
           
          <button onclick="location.reload()">Reload</button>
