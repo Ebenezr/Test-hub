@@ -1,3 +1,4 @@
+/*Test page styling*/
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Lato:wght@300&family=Oswald:wght@200;300&display=swap');
 
 *{
@@ -5,6 +6,7 @@
     font-family: 'Lato', sans-serif;
 
 }
+/*main wrapper*/
 article{
     width: 70vw;
     display: block;
@@ -18,6 +20,8 @@ article ul{
     flex-direction: column;
     padding:0;
 }
+/*test container*/
+
 .quiz-wrapper{
     display: flex;
     flex-direction: column;
@@ -35,10 +39,11 @@ article ul{
     background-color:#074F62;
     color: #fff;
 }
-
+/*hide stock radio buttons*/
 input[type="radio"] {
     display: none;
   }
+  /*make radio buttons label clickable*/
 input[type="radio"] + label {
     border: none;
     background-color: rgb(207, 206, 206);
@@ -52,10 +57,12 @@ input[type="radio"] + label {
     padding-left: 1em;
     line-height:3em;
     }
+    /*clicked radio botton*/
  input[type="radio"]:checked + label {
     border: none;
     background-color: #FFAC12;
   }
+  /*radio button hover*/
   input[type="radio"]:hover + label {
     border: none;
     background-color: rgb(45, 46, 47);
@@ -74,7 +81,7 @@ input[type="radio"] + label {
         align-items: center;
     
     }
-
+/*test button*/
     .quiz-wrapper button{
         width:100%;
         padding: 1em 3em;
