@@ -99,12 +99,16 @@ function myTimer() {
     }
 }
 
-
-
+function Questioncoounter(){
+  document.getElementById('quizNo').innerHTML="Question Number";
+}
+Questioncoounter();
 //function to reset local db
 function deselectAnswers() {
   radioOptions.forEach(answerEl => answerEl.checked = false)
 }
+
+
 //function to check which option has been selected
 function getSelected() {
   //initialize variable to store selected option
@@ -180,6 +184,6 @@ function myConfirm() {
   {
     window.location.href="./assets/pages/test.html";
   }
-  }  
+  } 
 
-
+2
