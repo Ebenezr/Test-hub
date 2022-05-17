@@ -185,5 +185,3 @@ function myConfirm() {
     window.location.href="./assets/pages/test.html";
   }
   } 
-
-2
