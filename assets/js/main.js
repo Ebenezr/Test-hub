@@ -98,11 +98,7 @@ function myTimer() {
          `
     }
 }
-
-function Questioncoounter(){
-  document.getElementById('quizNo').innerHTML="Question Number";
-}
-Questioncoounter();
+q
 //function to reset local db
 function deselectAnswers() {
   radioOptions.forEach(answerEl => answerEl.checked = false)
